@@ -68,23 +68,18 @@ public:
 
 int main() {
     BST<int> bst;
-    bst.insert(50);
-    bst.insert(30);
-    bst.insert(7.0);
-    bst.insert(20);
     bst.insert(40);
-    bst.insert(4.60);
+    bst.insert(30);
+    bst.insert(20);
+    bst.insert(50);
     bst.insert(80);
-
     cout << "In-order traversal: ";
     bst.inOrder();
-
-    int value = 40;
+    int value = 3;
     if (bst.search(value)) {
         cout << "Value " << value << " found in the BST." << endl;
     } else {
         cout << "Value " << value << " not found in the BST." << endl;
     }
-
     return 0;
 }
